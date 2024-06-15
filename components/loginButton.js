@@ -11,14 +11,9 @@ const waffleString = `<img src="${waffleBit}" class="food"alt="waffle" id="waffl
 const chickenString = `<img src="${chickenBit}" class="food" alt="chicken" id="chicken-bit">`;
 // prettier-ignore
 const loginButton = () => {
-
   const domString = `${logoString} <div><button id="google-auth-login" class="btn btn-danger">EMPLOYEE SIGN IN</button></div> <div id="food-sheet">${pizzaString} ${waffleString} ${chickenString}</div>
   `;
-  // const loginString = '<button id="google-auth-login" class="btn btn-danger">EMPLOYEE SIGN IN</button>';
   document.querySelector('#login-form-container').innerHTML = domString;
-  // document.querySelector('#app').innerHTML = loginString;
-
-
   document.querySelector('#google-auth-login').addEventListener('click', signIn);
 };
 
