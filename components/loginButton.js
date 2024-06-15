@@ -10,9 +10,7 @@ const pizzaString = `<img src="${pizzaBit}" alt="pizza" id="pizza-bit"/>`;
 // prettier-ignore
 const loginButton = () => {
   const domString = `${logoString} ${pizzaString}`;
-  const loginString = '<button id="google-auth-login" class="btn btn-danger">EMPLOYEE SIGN IN</button>';
   document.querySelector('#login-form-container').innerHTML = domString;
-  document.querySelector('#app').innerHTML = loginString;
   document.querySelector('#google-auth-login').addEventListener('click', signIn);
 };
 
