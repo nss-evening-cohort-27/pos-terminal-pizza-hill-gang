@@ -1,0 +1,85 @@
+{
+  "-MiBsBKGWFEU-yluJkL-": {
+    "orderId": "001",
+    "orderName": "Travis",
+    "customerPhone": "727-888-8888",
+    "customerEmail": "johnCena@gmail.com",
+    "items": {
+      "cheese pizza": "$20.00",
+      "chocolate waffle": "$4.00"
+    },
+    "paymentType": "",
+    "tipAmount": "",
+    "uid": ""
+  },
+  "-MiBsknNSQ6aBG1-2lQS": {
+    "orderId": "002",
+    "orderName": "John Cena",
+    "customerPhone": "727-867-5309",
+    "customerEmail": "johncena@gmail.com",
+    "items": "",
+    "paymentType": "",
+    "tipAmount": "",
+    "uid": ""
+  },
+  "-MiBuCve4-r_H-RLUOh2": {
+    "orderId": "003",
+    "orderName": "Anothony",
+    "customerPhone": "555-555-5555",
+    "customerEmail": "tony@gmail.com",
+    "items": "",
+    "paymentType": "",
+    "tipAmount": "",
+    "uid": ""
+  },
+  "-MiBuU13EaKmGOMjJF-Xiu3": {
+    "orderId": "004",
+    "orderName": "Anothony",
+    "customerPhone": "555-555-5555",
+    "customerEmail": "framter@gmail.com",
+    "items": "",
+    "paymentType": "",
+    "tipAmount": "",
+    "uid": ""
+  },
+  "-MiBsBKGWFEU-yluJkL-z4w": {
+    "orderId": "001",
+    "orderName": "Travis",
+    "customerPhone": "727-888-8888",
+    "customerEmail": "johnCena@gmail.com",
+    "items": "",
+    "paymentType": "",
+    "tipAmount": "",
+    "uid": ""
+  },
+  "-MiBsknNSQ6aBG1-2lQS34knj": {
+    "orderId": "002",
+    "orderName": "John Cena",
+    "customerPhone": "727-867-5309",
+    "customerEmail": "johnCena@gmail.com",
+    "items": "",
+    "paymentType": "",
+    "tipAmount": "",
+    "uid": ""
+  },
+  "-MiBuCve4-r_H-RLUOh2kjnr": {
+    "orderId": "003",
+    "orderName": "Anothony",
+    "customerPhone": "555-555-5555",
+    "customerEmail": "johnCena@gmail.com",
+    "items": "",
+    "paymentType": "",
+    "tipAmount": "",
+    "uid": ""
+  },
+  "-MiBuU13EaKmGOMjJF-Xa23": {
+    "orderId": "004",
+    "orderName": "Anothony",
+    "customerPhone": "555-555-5555",
+    "customerEmail": "johnCena@gmail.com",
+    "items": "",
+    "paymentType": "",
+    "tipAmount": "",
+    "uid": ""
+  }
+}
