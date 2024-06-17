@@ -18,7 +18,7 @@ const showOrders = (array) => {
           <h2 class="card-title card-order-name">${order.orderName}</h2>
           <p class="card-text card-order-status">Order Status: Open</p>
           <p class="card-text card-phone-number">Customer Phone Number: ${order.phoneNumber}</p>
-          <p class="card-text card-email-address">Customer Email Address: ${order.email}</p>
+          <p class="card-text card-email-address">Customer Email Address: ${order.Email}</p>
           <p class="card-text card-order-type">Order Type: ${order.orderType}</p>
           <button id="view-order-btn--${order.firebaseKey}" class="btn btn-link">Details</button>
           <button id="edit-order-btn--${order.firebaseKey}" class="btn btn-link">Edit</button>
@@ -33,7 +33,7 @@ const showOrders = (array) => {
           <h2 class="card-title card-order-name">${order.orderName}</h2>
           <p class="card-text card-order-status">Order Status: Closed</p>
           <p class="card-text card-phone-number">Customer Phone Number: ${order.phoneNumber}</p>
-          <p class="card-text card-email-address">Customer Email Address: ${order.email}</p>
+          <p class="card-text card-email-address">Customer Email Address: ${order.Email}</p>
           <p class="card-text card-order-type">Order Type: ${order.orderType}</p>
           <button id="view-order-btn--${order.firebaseKey}" class="btn btn-link">Details</button>
           <button id="edit-order-btn--${order.firebaseKey}" class="btn btn-link">Edit</button>
