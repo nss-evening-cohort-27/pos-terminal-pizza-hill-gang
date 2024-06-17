@@ -16,7 +16,7 @@ const closeOrderForm = (obj = {}) => {
       </div>
       <div class="form-group">
         <label for="tip amount">Tip Amount</label>
-        <input type="text" class="form-control" id="tip_amount" placeholder="Tip Amount" value="${obj.tipAmount || ''}" required>
+        <input type="text" class="form-control" id="tip-amount" placeholder="Tip Amount" value="${obj.tipAmount || ''}" required>
       </div>
       <button type="submit" class="btn btn-primary mt-3">Close Order</button>
     </form>`;
