@@ -3,8 +3,7 @@ import homePage from '../../pages/homePage';
 
 const startApp = () => {
   domBuilder();
-
-  homePage().then();
+  homePage();
 };
 
 export default startApp;

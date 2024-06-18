@@ -12,7 +12,7 @@ const homePage = () => {
           <button type="button" id="view-revenue-btn" class="btn btn-warning">View/Revenue</button>
         </div>
       </div>`;
-  renderToDom('#home-page', homeString);
+  renderToDom('#app', homeString);
 };
 
 export default homePage;
