@@ -71,7 +71,7 @@ const deleteOrder = (firebaseKey) => new Promise((resolve, reject) => {
 
 // prettier-ignore
 const addItemToOrder = (payload) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/orders/${firebaseKey}/items.json`, {
+  fetch(`${endpoint}/orders/${payload.firebaseKey}/items.json`, {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json',
