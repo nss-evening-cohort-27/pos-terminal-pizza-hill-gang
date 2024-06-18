@@ -32,7 +32,7 @@ const formEvents = (user) => {
         firebaseKey,
       };
       updateOrders(payload).then(() => {
-        getOders().then(showOrders);
+        getOrders().then(showOrders);
       });
     }
   });
