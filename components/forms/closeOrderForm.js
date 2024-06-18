@@ -1,7 +1,7 @@
-import clearDom from "../../utils/clearDom";
-import renderToDom from "../../utils/renderToDom";
+import clearDom from '../../utils/clearDom';
+import renderToDom from '../../utils/renderToDom';
 
-//BUILD THE CLOSE ORDER FORM - THIS CREATES A PAYMENT IN THE DATABASE - FORM SHOULD HAVE PAYMENT TYPE AND payment type should be a dropdown with cash, credi or mobile. and second input should be tip amount.
+// BUILD THE CLOSE ORDER FORM - THIS CREATES A PAYMENT IN THE DATABASE - FORM SHOULD HAVE PAYMENT TYPE AND payment type should be a dropdown with cash, credi or mobile. and second input should be tip amount.
 
 const closeOrderForm = (obj = {}) => {
   clearDom();

@@ -1,6 +1,6 @@
-import clearDom from "../../utils/clearDom";
-import renderToDOM from "../../utils";
-//THIS IS THE FORM FOR BOTH CREATING AND UPDATING AN ORDER
+import clearDom from '../../utils/clearDom';
+import renderToDom from '../../utils/renderToDom';
+// THIS IS THE FORM FOR BOTH CREATING AND UPDATING AN ORDER
 
 const createOrderForm = (obj = {}) => {
   clearDom();
@@ -21,8 +21,8 @@ const createOrderForm = (obj = {}) => {
       <div class="form-group">
         <label for="orderType">Order Type</label>
         <select class="form-control" id="order-type" required>
-          <option value="call-in" ${obj.orderType === "Call-In" ? 'selected' : ''}>Call-In</option>
-          <option value="walk-in" ${obj.orderType === "Walk-In" ? 'selected' : ''}>Walk-In</option>
+          <option value="call-in" ${obj.orderType === 'Call-In' ? 'selected' : ''}>Call-In</option>
+          <option value="walk-in" ${obj.orderType === 'Walk-In' ? 'selected' : ''}>Walk-In</option>
         </select>
         <input type="text" class="form-control" id="order-type" placeholder="Order Type" value="${obj.orderType || ''}" required>
       </div> 
@@ -30,7 +30,7 @@ const createOrderForm = (obj = {}) => {
       </button>
     </form>`;
 
-  renderToDOM('#form-container', domString);
+  renderToDom('#form-container', domString);
 };
 
 export default createOrderForm;
