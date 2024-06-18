@@ -1,7 +1,5 @@
 const clearDom = () => {
-  document.querySelector('#store').innerHTML = '';
-  document.querySelector('#form-container').innerHTML = '';
-  document.querySelector('#home-page').innerHTML = '';
+  document.querySelector('#app').innerHTML = '';
 };
 
 export default clearDom;
