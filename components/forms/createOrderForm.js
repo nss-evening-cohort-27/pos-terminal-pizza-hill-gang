@@ -33,4 +33,4 @@ const createOrderForm = (obj = {}) => {
   renderToDOM('#form-container', domString);
 };
 
-export default addBookForm;
+export default createOrderForm;
