@@ -35,7 +35,6 @@ const navBar = () => {
       </nav>`;
 
   renderToDom('#navigation', domString);
-  console.warn(domString);
 };
 
 export default navBar;
