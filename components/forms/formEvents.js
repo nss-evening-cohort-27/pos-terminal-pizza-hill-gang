@@ -15,10 +15,11 @@ const formEvents = (user) => {
 
       //  Will rename create, update, and get functions once data fuctions are available.
 
-      createOrders(payload).then(({ name }) => {
+      createOrder(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
-        updateOrders(patchPayload).then(() => {
-          getFoodCards().then(showOrders);
+
+        updateOrder(patchPayload).then(() => {
+          getOrders().then(showOrders);
         });
       });
     }
@@ -31,8 +32,8 @@ const formEvents = (user) => {
         customerEmail: document.querySelector('#customer-email').value,
         firebaseKey,
       };
-      updateOrders(payload).then(() => {
-        getOders().then(showOrders);
+      updateOrder(payload).then(() => {
+        getOrders().then(showOrders);
       });
     }
   });
