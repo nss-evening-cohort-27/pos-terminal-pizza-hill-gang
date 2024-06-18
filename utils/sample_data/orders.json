@@ -5,8 +5,16 @@
     "customerPhone": "727-888-8888",
     "customerEmail": "johnCena@gmail.com",
     "items": {
-      "cheese pizza": "$20.00",
-      "chocolate waffle": "$4.00"
+      "-MiBsBKGW83U-yluJkL-": {
+        "name": "cheese pizza",
+        "price": "$20.00",
+        "itemId": "-MiBsBKGW83U-yluJkL-"
+      },
+      "-MiBsBKGW38U-yluJkL-": {
+        "name": "chocolate waffle",
+        "price": "$4.00",
+        "itemId": "-MiBsBKGW38U-yluJkL-"
+      }
     },
     "paymentType": "",
     "tipAmount": "",
