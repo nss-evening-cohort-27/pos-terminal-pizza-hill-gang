@@ -1,5 +1,6 @@
 // Will import fuction from api data
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { showOrders } from "../pages/orders";
 
 const formEvents = (user) => {
@@ -42,6 +43,8 @@ const formEvents = (user) => {
   export default formEvents;
   
 =======
+=======
+>>>>>>> 7bd6df80adf5fa8cbc00a5226a09d6d7efe792e6
 import { showOrders } from '../../pages/orders';
 
 const formEvents = (user) => {
@@ -83,4 +86,7 @@ const formEvents = (user) => {
 };
 
 export default formEvents;
+<<<<<<< HEAD
+>>>>>>> 7bd6df80adf5fa8cbc00a5226a09d6d7efe792e6
+=======
 >>>>>>> 7bd6df80adf5fa8cbc00a5226a09d6d7efe792e6
