@@ -1,5 +1,6 @@
 // Will import fuction from api data
-import { showOrders } from '../../pages/orders';
+import { createOrders, updateOrder, getOrders } from '../api/orderData';
+import { showOrders } from '../pages/orders';
 
 const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
@@ -15,7 +16,7 @@ const formEvents = (user) => {
 
       //  Will rename create, update, and get functions once data fuctions are available.
 
-      createOrder(payload).then(({ name }) => {
+      createOrders(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
 
         updateOrder(patchPayload).then(() => {
