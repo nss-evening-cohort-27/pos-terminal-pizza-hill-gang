@@ -82,9 +82,14 @@ body {
 #home-page {
 color:whitesmoke;
 background-color: rgb(68, 66, 66);
+max-width: 800px;
+margin: 0 auto
+}
+#card-title{
+  margin: 0 auto;
+
 }
 #home-buttons{
-display:block;
-text-align: center;
-padding: 10px 24px;
+margin-bottom: 15px;
+
 }
