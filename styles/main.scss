@@ -80,11 +80,28 @@ body {
 }
 
 #home-page {
-color:whitesmoke;
-background-color: rgb(68, 66, 66);
+  color: whitesmoke;
+  background-color: transparent;
 }
-#home-buttons{
-display:block;
-text-align: center;
-padding: 10px 24px;
+
+#home-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 24px;
+}
+
+#home-buttons .btn {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.card-body {
+  margin-top: 25vh;
+  margin-bottom: 15vh;
+}
+
+#search {
+  margin-left: 19.3vw;
 }
