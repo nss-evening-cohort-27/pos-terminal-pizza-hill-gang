@@ -25,7 +25,7 @@ const createOrderForm = (obj = {}) => {
           <option value="walk-in" ${obj.orderType === 'Walk-In' ? 'selected' : ''}>Walk-In</option>
         </select>
       </div> 
-      <button type="submit" class="btn btn-primary">Create/Edit Order
+      <button id="edit-order-btn" type="submit" class="btn btn-primary">Create/Edit Order
       </button>
     </form>`;
 
