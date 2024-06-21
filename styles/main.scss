@@ -15,12 +15,11 @@ body {
   background-size: cover;
   text-align: center;
   margin-top: 70px;
-  overflow: hidden;
 }
 #app {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   height: fit-content;
 }
 
@@ -43,6 +42,10 @@ body {
 
 #login-form-container {
   margin-top: -50px;
+}
+
+#submit-order{
+  margin-top: 10%;
 }
 
 #food-sheet {

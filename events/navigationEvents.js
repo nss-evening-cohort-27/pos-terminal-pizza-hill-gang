@@ -4,26 +4,32 @@ import { showOrders } from '../pages/orders';
 // import { showOrders } from '../pages/orders';
 // import clearDom from '../utils/clearDom';
 // import homePage from '../pages/homePage';
-// import createOrderForm from '../components/forms/createOrderForm';
+import createOrderForm from '../components/forms/createOrderForm';
 
 const navigationEvents = () => {
   document.querySelector('#view-orders').addEventListener('click', () => {
     console.warn('this should click');
     getOrders().then(showOrders);
-    // LOGOUT BUTTON
-    // document.querySelector('#logout-button')
-    //   .addEventListener('click', signOut);
-
-    // TODO: LOGO: NAVIGATE TO HOME PAGE (stillneeds an id form 'the nav html)
-    // document.querySelector('#??????????').addEventListener('click', () => {
-    //   homePage();
-    // });
-    // TODO: NAVIGATE TO VIEW ORDERS PAGE
-
-    // document.querySelector('#view-orders').addEventListener('click', () => {
-    //   // showOrders();
-    //   console.warn('does this work');
   });
+
+  document.querySelector('#create-order').addEventListener('click', () => {
+    console.warn('this should click for create orders');
+    createOrderForm();
+  });
+  // LOGOUT BUTTON
+  // document.querySelector('#logout-button')
+  //   .addEventListener('click', signOut);
+
+  // TODO: LOGO: NAVIGATE TO HOME PAGE (stillneeds an id form 'the nav html)
+  // document.querySelector('#??????????').addEventListener('click', () => {
+  //   homePage();
+  // });
+  // TODO: NAVIGATE TO VIEW ORDERS PAGE
+
+  // document.querySelector('#view-orders').addEventListener('click', () => {
+  //   // showOrders();
+  //   console.warn('does this work');
+
   // if (e.target.id.includes('view-orders')) {
   //   console.warn('click me');
   // }
