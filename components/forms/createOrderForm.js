@@ -24,7 +24,6 @@ const createOrderForm = (obj = {}) => {
           <option value="call-in" ${obj.orderType === 'Call-In' ? 'selected' : ''}>Call-In</option>
           <option value="walk-in" ${obj.orderType === 'Walk-In' ? 'selected' : ''}>Walk-In</option>
         </select>
-        <input type="text" class="form-control" id="order-type" placeholder="Order Type" value="${obj.orderType || ''}" required>
       </div> 
       <button type="submit" class="btn btn-primary">Create/Edit Order
       </button>
