@@ -5,6 +5,7 @@ import { showOrders } from '../pages/orders';
 // import clearDom from '../utils/clearDom';
 // import homePage from '../pages/homePage';
 import createOrderForm from '../components/forms/createOrderForm';
+import createItemForm from '../components/forms/createItemsForm';
 
 const navigationEvents = () => {
   document.querySelector('#view-orders').addEventListener('click', () => {
@@ -12,9 +13,24 @@ const navigationEvents = () => {
     getOrders().then(showOrders);
   });
 
+  document.querySelector('#view-order-btn').addEventListener('click', () => {
+    console.warn('this should click to view orders');
+    getOrders().then(showOrders);
+  });
+
   document.querySelector('#create-order').addEventListener('click', () => {
     console.warn('this should click for create orders');
     createOrderForm();
+  });
+
+  document.querySelector('#create-order-btn').addEventListener('click', () => {
+    console.warn('this should click for create orders');
+    createOrderForm();
+  });
+
+  document.querySelector('#edit-order-btn').addEventListener('click', () => {
+    console.warn('this should click for edit orders');
+    createItemForm();
   });
   // LOGOUT BUTTON
   // document.querySelector('#logout-button')
