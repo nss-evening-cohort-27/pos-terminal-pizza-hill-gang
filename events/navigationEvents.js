@@ -19,7 +19,7 @@ const navigationEvents = () => {
     getOrders().then(showOrders);
   });
 
-  document.querySelector('#view-order-btn').addEventListener('click', () => {
+  document.querySelector('#i-wish-i-could-see-the-world').addEventListener('click', () => {
     console.warn('this should click to view orders');
     getOrders().then(showOrders);
   });
