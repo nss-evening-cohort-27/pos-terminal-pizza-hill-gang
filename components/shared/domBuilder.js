@@ -5,6 +5,7 @@ const domBuilder = () => {
   <div id="navigation"></div>
   <div id="app"></div>
   `;
+  document.getElementById('login-form-container').innerHTML = '';
   renderToDOM('#app', domString);
 };
 

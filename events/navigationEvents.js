@@ -5,10 +5,14 @@ import homePage from '../pages/homePage';
 import createOrderForm from '../components/forms/createOrderForm';
 // import createItemForm from '../components/forms/createItemsForm';
 
+// prettier-ignore
 const navigationEvents = () => {
   // LOGOUT BUTTON
-  document.querySelector('#logout-button')
-    .addEventListener('click', signOut);
+  document.querySelector('#logout-button').addEventListener('click', () => {
+    document.querySelector('#app').innerHTML = '';
+    document.querySelector('.container-fluid').innerHTML = '';
+    signOut();
+  });
 
   document.querySelector('#view-orders').addEventListener('click', () => {
     console.warn('this should click');
