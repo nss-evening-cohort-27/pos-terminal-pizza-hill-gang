@@ -2,6 +2,7 @@ import clearDom from '../../utils/clearDom';
 import renderToDom from '../../utils/renderToDom';
 // THIS IS THE FORM FOR BOTH CREATING AND UPDATING AN ORDER
 
+// prettier-ignore
 const createOrderForm = (obj = {}) => {
   clearDom();
   const domString = `
@@ -25,7 +26,7 @@ const createOrderForm = (obj = {}) => {
           <option value="walk-in" ${obj.orderType === 'Walk-In' ? 'selected' : ''}>Walk-In</option>
         </select>
       </div> 
-      <button id="edit-order-btn" type="submit" class="btn btn-primary">Create/Edit Order
+      <button id="edit-order-btn--${obj.firebaseKey}" type="submit" class="btn btn-primary">Create/Edit Order
       </button>
     </form>`;
 
