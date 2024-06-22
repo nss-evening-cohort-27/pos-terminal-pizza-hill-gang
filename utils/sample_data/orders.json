@@ -19,6 +19,8 @@
     "paymentType": "",
     "tipAmount": "",
     "orderType": "call in",
+    "firebaseKey": "-MiBsBKGWFEU-yluJkL-",
+    "orderStatus": "open",
     "uid": ""
   },
   "-MiBsknNSQ6aBG1-2lQS": {
@@ -30,6 +32,8 @@
     "paymentType": "",
     "tipAmount": "",
     "orderType": "walk in",
+    "firebaseKey": "-MiBsknNSQ6aBG1-2lQS",
+    "orderStatus": "closed",
     "uid": ""
   },
   "-MiBuCve4-r_H-RLUOh2": {
@@ -41,6 +45,8 @@
     "paymentType": "",
     "tipAmount": "",
     "orderType": "call in",
+    "firebaseKey": "-MiBuCve4-r_H-RLUOh2",
+    "orderStatus": "open",
     "uid": ""
   },
   "-MiBuU13EaKmGOMjJF-Xiu3": {
@@ -52,6 +58,8 @@
     "paymentType": "",
     "tipAmount": "",
     "orderType": "call in",
+    "firebaseKey": "-MiBuU13EaKmGOMjJF-Xiu3",
+    "orderStatus": "closed",
     "uid": ""
   },
   "-MiBsBKGWFEU-yluJkL-z4w": {
@@ -63,6 +71,8 @@
     "paymentType": "",
     "tipAmount": "",
     "orderType": "walk in",
+    "firebaseKey": "-MiBsBKGWFEU-yluJkL-z4w",
+    "orderStatus": "open",
     "uid": ""
   },
   "-MiBsknNSQ6aBG1-2lQS34knj": {
@@ -74,6 +84,8 @@
     "paymentType": "",
     "tipAmount": "",
     "orderType": "call in",
+    "firebaseKey": "-MiBsknNSQ6aBG1-2lQS34knj",
+    "orderStatus": "closed",
     "uid": ""
   },
   "-MiBuCve4-r_H-RLUOh2kjnr": {
@@ -85,6 +97,8 @@
     "paymentType": "",
     "tipAmount": "",
     "orderType": "walk in",
+    "firebaseKey": "-MiBuCve4-r_H-RLUOh2kjnr",
+    "orderStatus": "closed",
     "uid": ""
   },
   "-MiBuU13EaKmGOMjJF-Xa23": {
@@ -96,6 +110,8 @@
     "paymentType": "",
     "tipAmount": "",
     "orderType": "call in",
+    "firebaseKey": "-MiBuU13EaKmGOMjJF-Xa23",
+    "orderStatus": "closed",
     "uid": ""
   }
 }
