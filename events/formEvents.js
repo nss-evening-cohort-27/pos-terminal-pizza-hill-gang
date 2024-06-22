@@ -5,12 +5,13 @@ const formEvents = () => {
   document.querySelector('#app').addEventListener('submit', (e) => {
     e.preventDefault();
     // TODO: CLICK EVENT FOR SUBMITTING Order Form
-    if (e.target.id.includes('submit')) {
+    if (e.target.id.includes('submit-order')) {
       console.warn('this button works');
       const payload = {
         orderName: document.querySelector('#order-name').value,
         customerPhone: document.querySelector('#customer-phone').value,
         customerEmail: document.querySelector('#customer-email').value,
+        orderType: document.querySelector('#order-type').value,
       };
 
       //  Will rename create, update, and get functions once data fuctions are available.
@@ -24,18 +25,19 @@ const formEvents = () => {
       });
     }
     // TODO: CLICK EVENT FOR EDITING Order Form
-    // if (e.target.id.includes('update-order')) {
-    //   const [, firebaseKey] = e.target.id.split('--');
-    //   const payload = {
-    //     orderName: document.querySelector('#order-name').value,
-    //     customerPhone: document.querySelector('#customer-phone').value,
-    //     customerEmail: document.querySelector('#customer-email').value,
-    //     firebaseKey,
-    //   };
-    //   updateOrder(payload).then(() => {
-    //     getOrders().then(showOrders);
-    //   });
-    // }
+    if (e.target.id.includes('update-order')) {
+      const [, firebaseKey] = e.target.id.split('--');
+      const payload = {
+        orderName: document.querySelector('#order-name').value,
+        customerPhone: document.querySelector('#customer-phone').value,
+        customerEmail: document.querySelector('#customer-email').value,
+        orderType: document.querySelector('#order-type').value,
+        firebaseKey,
+      };
+      updateOrder(payload).then(() => {
+        getOrders().then(showOrders);
+      });
+    }
   });
 };
 
