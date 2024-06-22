@@ -3,7 +3,7 @@ import { showOrders } from '../pages/orders';
 // import { signOut } from '../auth.js';
 // import { showOrders } from '../pages/orders';
 // import clearDom from '../utils/clearDom';
-// import homePage from '../pages/homePage';
+import homePage from '../pages/homePage';
 import createOrderForm from '../components/forms/createOrderForm';
 // import createItemForm from '../components/forms/createItemsForm';
 
@@ -37,9 +37,9 @@ const navigationEvents = () => {
   //   .addEventListener('click', signOut);
 
   // TODO: LOGO: NAVIGATE TO HOME PAGE (stillneeds an id form 'the nav html)
-  // document.querySelector('#??????????').addEventListener('click', () => {
-  //   homePage();
-  // });
+  document.querySelector('#nav-logo').addEventListener('click', () => {
+    homePage();
+  });
   // TODO: NAVIGATE TO VIEW ORDERS PAGE
 
   // document.querySelector('#view-orders').addEventListener('click', () => {
