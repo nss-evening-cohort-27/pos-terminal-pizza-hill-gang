@@ -1,13 +1,15 @@
 import { getOrders } from '../api/orderData';
 import { showOrders } from '../pages/orders';
-// import { signOut } from '../auth.js';
-// import { showOrders } from '../pages/orders';
-// import clearDom from '../utils/clearDom';
+import { signOut } from '../utils/auth';
 import homePage from '../pages/homePage';
 import createOrderForm from '../components/forms/createOrderForm';
 // import createItemForm from '../components/forms/createItemsForm';
 
 const navigationEvents = () => {
+  // LOGOUT BUTTON
+  document.querySelector('#logout-button')
+    .addEventListener('click', signOut);
+
   document.querySelector('#view-orders').addEventListener('click', () => {
     console.warn('this should click');
     getOrders().then(showOrders);
@@ -33,8 +35,10 @@ const navigationEvents = () => {
   //   createItemForm();
   // });
   // LOGOUT BUTTON
-  // document.querySelector('#logout-button')
-  //   .addEventListener('click', signOut);
+  // document.querySelector('#logout-button').addEventListener('click', () => {
+  //   console.warn('this click lets me know the logout button is clicking');
+  //   signOut();
+  // });
 
   // TODO: LOGO: NAVIGATE TO HOME PAGE (stillneeds an id form 'the nav html)
   document.querySelector('#nav-logo').addEventListener('click', () => {
