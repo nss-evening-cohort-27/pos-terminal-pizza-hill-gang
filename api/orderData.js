@@ -83,6 +83,19 @@ const addItemToOrder = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+// prettier-ignore
+const getOrderItems = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/orders/${firebaseKey}/items.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 export {
   getOrders,
   createOrders,
@@ -90,4 +103,5 @@ export {
   getSingleOrder,
   deleteOrder,
   addItemToOrder,
+  getOrderItems,
 };
