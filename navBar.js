@@ -29,7 +29,6 @@ const navBar = () => {
           </ul>
           <span class="navbar-text">
             <div id="logout-button"></div>
-           
           </span>
         </div>
         </div>
