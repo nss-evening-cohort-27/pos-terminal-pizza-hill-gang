@@ -6,14 +6,14 @@ const formEvents = () => {
     e.preventDefault();
     // TODO: CLICK EVENT FOR SUBMITTING Order Form
     if (e.target.id.includes('submit-order')) {
-      console.warn('this button works');
+      e.preventDefault();
       const payload = {
         orderName: document.querySelector('#order-name').value,
         customerPhone: document.querySelector('#customer-phone').value,
         customerEmail: document.querySelector('#customer-email').value,
+        orderStatus: 'open',
         orderType: document.querySelector('#order-type').value,
       };
-
       //  Will rename create, update, and get functions once data fuctions are available.
 
       createOrders(payload).then(({ name }) => {
