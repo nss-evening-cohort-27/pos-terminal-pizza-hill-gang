@@ -35,6 +35,7 @@ const domEvents = () => {
     if (e.target.id.includes('view-order-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
       getOrderItems(firebaseKey).then(showItems);
+      console.warn('firebasekey', getOrderItems(firebaseKey));
     }
 
     // prettier-ignore
@@ -43,10 +44,6 @@ const domEvents = () => {
       console.warn(e.target.id.split('--'));
       const [, firebaseKey] = e.target.id.split('--');
       getSingleOrder(firebaseKey).then((order) => createOrderForm(order));
-    }
-
-    if (e.target.id.includes('view-order-btn')) {
-      getOrders().then(showOrders);
     }
   });
 };
