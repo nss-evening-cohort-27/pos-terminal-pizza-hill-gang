@@ -92,7 +92,10 @@ const getOrderItems = (firebaseKey) => new Promise((resolve, reject) => {
     },
   })
     .then((response) => response.json())
-    .then((data) => resolve(data))
+    .then((data) => {
+      const arrayData = Object.values(data);
+      resolve(arrayData);
+    })
     .catch(reject);
 });
 
