@@ -20,7 +20,7 @@ const createOrderForm = (obj = {}) => {
       </div>
       <div class="form-group">
         <label for="orderType">Order Type</label>
-        <select class="form-control" id="order-type" required>
+        <select class="form-control" id="order-type" value="${obj.orderType || ''}" required>
           <option value="call-in" ${obj.orderType === 'Call-In' ? 'selected' : ''}>Call-In</option>
           <option value="walk-in" ${obj.orderType === 'Walk-In' ? 'selected' : ''}>Walk-In</option>
         </select>
