@@ -29,7 +29,7 @@ const domEvents = () => {
       console.warn('EDIT ORDER', e.target.id);
       console.warn(e.target.id.split('--'));
       const [, firebaseKey] = e.target.id.split('--');
-      getSingleOrder(firebaseKey).then(createOrderForm());
+      getSingleOrder(firebaseKey).then((order) => (createOrderForm(order)))
     }
   });
 };
