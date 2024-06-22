@@ -15,7 +15,7 @@ const navigationEvents = () => {
   });
 
   document.querySelector('#view-orders').addEventListener('click', () => {
-    console.warn('this should click');
+    console.warn('this should click to view orders from nav');
     getOrders().then(showOrders);
   });
 
@@ -25,7 +25,7 @@ const navigationEvents = () => {
   });
 
   document.querySelector('#create-order').addEventListener('click', () => {
-    console.warn('this should click for create orders');
+    console.warn('this should click for create orders from nav link');
     createOrderForm();
   });
 

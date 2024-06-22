@@ -2,6 +2,7 @@ import renderToDom from '../utils/renderToDom';
 import clearDom from '../utils/clearDom';
 import { getOrders } from '../api/orderData';
 import { showOrders } from './orders';
+import createOrderForm from '../components/forms/createOrderForm';
 
 const userName = () => 'Name';
 
@@ -21,8 +22,13 @@ const homePage = (user) => {
   document
     .querySelector('#i-wish-i-could-see-the-world')
     .addEventListener('click', () => {
-      console.warn('this should click to view orders');
+      console.warn('this should click to view orders from home page button');
       getOrders().then(showOrders);
+    });
+  document.querySelector('#create-order-btn')
+    .addEventListener('click', () => {
+      console.warn('this should click to go to create order form from home page button');
+      createOrderForm();
     });
 };
 
