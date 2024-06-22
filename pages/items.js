@@ -3,9 +3,10 @@ import renderToDom from '../utils/renderToDom';
 
 const emptyItems = () => {
   const domString = 'No Item';
-  renderToDom('#item-card-container', domString);
+  renderToDom('#app', domString);
 };
 
+// prettier-ignore
 const showItems = (array) => {
   clearDom();
 
@@ -14,18 +15,16 @@ const showItems = (array) => {
     domString += `
     <div class="card item-card">
       <div class="card-body">
-        <h3 class="card-title card-item-name">${item.itemName}</h3>
-        <p class="card-text card-item-price">PRICE: $${item.price}</p>
-        <i id="edit-item-btn--${item.firebaseKey}" class="fas fa-edit btn btn-info"> Edit</i>
-        <i id="delete-item-btn--${item.firebaseKey}" class="btn btn-danger fas fa-trash-alt"> Delete</i>
+        <h2 class="card-title card-item-name">${item.orderName}</h2>
+        <p class="card-text card-item-price">status: ${item.orderType} <br> customer #: ${item.customerPhone} <br> customer email: ${item.customerEmail} <br> ${item.orderType} </p>
+        <button id="edit-item-btn--${item.firebaseKey}" class="fas btn btn-info"> Edit</button>
+        <button id="delete-item-btn--${item.firebaseKey}" class="btn btn-danger fas"> Delete</button>
         <button class="add-item-btn"" id="add-item-btn--${item.firebaseKey}">Add Item</button>
-        <button class="add-item-btn"" id="add-item-btn--${item.firebaseKey}">Add Item</button>
-        <button class="go-to-payment-btn" id="go-to-payment-btn--${item.firebaseKey}">Go To Payment</button>
       </div>
     </div>
     `;
   });
-  renderToDom('#item-cards-container', domString);
+  renderToDom('#app', domString);
 };
 
 export { emptyItems, showItems };
