@@ -19,11 +19,18 @@ const showItems = (array) => {
         <p class="card-text card-item-price">moolah: ${item.price}</p>
         <button id="edit-item-btn--${item.itemId}"> Edit</button>
         <button id="delete-item-btn--${item.itemId}"> Delete</button>
-        <button id="add-item-btn">Add Item</button>
       </div>
     </div>
     `;
   });
+  domString += `
+        </div>
+        <div id="item-page-button-container">
+          <button class="add-item-btn" id="add-item-btn">Add Item</button>
+          <button class="go-to-payment-btn" id="go-to-payment-btn--">Go To Payment</button>
+        </div>
+      </div>
+  `;
   renderToDom('#app', domString);
 };
 
