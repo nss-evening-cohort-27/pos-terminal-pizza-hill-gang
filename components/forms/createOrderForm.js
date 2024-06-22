@@ -3,6 +3,7 @@ import renderToDom from '../../utils/renderToDom';
 // THIS IS THE FORM FOR BOTH CREATING AND UPDATING AN ORDER
 
 // prettier-ignore
+// eslint-disable-next-line
 const createOrderForm = (obj = {}) => {
   clearDom();
   const domString = `
@@ -29,7 +30,6 @@ const createOrderForm = (obj = {}) => {
       <button id="edit-order-btn--${obj.firebaseKey}" type="submit" class="btn btn-primary">Create/Edit Order
       </button>
     </form>`;
-
   renderToDom('#app', domString);
 };
 
