@@ -5,6 +5,7 @@ import {
   getOrderItems,
 } from '../api/orderData';
 import createItemForm from '../components/forms/createItemsForm';
+// import createItemForm from '../components/forms/createItemsForm';
 import createOrderForm from '../components/forms/createOrderForm';
 import { showItems } from '../pages/items';
 import { showOrders } from '../pages/orders';
@@ -12,10 +13,9 @@ import { showOrders } from '../pages/orders';
 const domEvents = () => {
   document.querySelector('#app').addEventListener('click', (e) => {
     if (e.target.id.includes('edit-item')) {
-      const [, firebaseKey] = e.target.id.split('--');
+      // const [, firebaseKey] = e.target.id.split('--');
 
-      getSingleOrder(firebaseKey).then(() => createItemForm());
-      console.warn('EDIT item', e.target.id);
+      // getSingleOrder(firebaseKey).then(() => createItemForm());
     }
 
     // TODO: CLICK EVENT FOR DELETING A ORDER
@@ -44,6 +44,11 @@ const domEvents = () => {
       console.warn(e.target.id.split('--'));
       const [, firebaseKey] = e.target.id.split('--');
       getSingleOrder(firebaseKey).then((order) => createOrderForm(order));
+    }
+
+    if (e.target.id.includes('add-item-btn')) {
+      console.warn('This is an add item button');
+      createItemForm();
     }
   });
 };

@@ -17,8 +17,9 @@ const showItems = (array) => {
       <div class="card-body">
         <h2 class="card-title card-item-name">${item.name}</h2>
         <p class="card-text card-item-price">moolah: ${item.price}</p>
-        <link id="edit-item-btn--${item.itemId}"> Edit</link>
-        <link id="delete-item-btn--${item.itemId}"> Delete</link>
+        <button id="edit-item-btn--${item.itemId}"> Edit</button>
+        <button id="delete-item-btn--${item.itemId}"> Delete</button>
+        <button id="add-item-btn">Add Item</button>
       </div>
     </div>
     `;
